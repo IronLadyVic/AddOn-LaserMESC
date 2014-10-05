@@ -395,12 +395,15 @@ svg #grey-polygon{
    }
 #meets-list{
   position: relative;
-  margin-top: 23em;
+  margin-top: -2em;
   font-size: 1em;
   padding-top: 2em;
   
 }
-
+#meets-list .flex-item{
+  width: 25em;
+  height: 5em;
+}
 .meet-date{
   align-items: center;
   width: 97%;
@@ -410,53 +413,44 @@ svg #grey-polygon{
   height: 1.4em; 
   margin-left: -0.15em;
 }
-.meet-divider{
-  align-items: center;
-  width: 97%;
-  position: relative;
-  background-color: #CCCCCC;
-  text-indent: 0.5em;
-  height: 0.2em; 
-  margin-left: -0.15em;
-}
+
 .meet{
-  position: relative;
-  margin-left: 1em;
-  height: 4.2em;
-  margin-bottom: 0.5em;
+  float: left;
+
+  height: 5em;
+  margin-bottom: 0.2em;
   
 }
 
-.meet-descriptionst ul li{
+.meet-descriptions ul li{
   float: left;
+  box-sizing: border-box;
 }
 /*-----------------------Meet/Events Date-----------------*/
 
 .date-background{
-  width: 3.4em;
-  height: 3.4em;
+  width: 5em;
+  height: 5em;
   position: absolute;
   background-color: #333333;
   color: white;
-  margin-top: -0.8em;
+ 
   z-index: 300;
-  margin-left: -0.1em;
+
 }
 
 .date-background h3{
   position: relative;
   font-size: 2.35em;
   font-weight: 200;
-  margin-top: -0.15em;
-  margin-left: 0.15em;
+
   z-index: 305;
 }
 .date-background p{
   position: relative;
   font-size: 0.85em;
   font-weight: 100;
-  margin-top: -3.6em;
-  margin-left: 0.45em;
+
   letter-spacing: 0.1em;
   z-index: 305;
 }
@@ -466,11 +460,10 @@ svg #grey-polygon{
 .meet-descriptions{
   width: 97%;
   height: 3.4em;
-  position: absolute;
-  margin-top: -0.8em;
-  margin-bottom: 1em;
+  position: relative;
+
   background-color: #FFFFFF;
-  margin-left: -0.2em;
+
   color: #333333;
 }
 .title h3{
@@ -538,6 +531,30 @@ use this for mobile!!!!!!!*/
   height: 0em;
   display: none;
 }
+#gallery li:nth-child(9){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+
+#gallery li:nth-child(10){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+
+#gallery li:nth-child(11){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+#gallery li:nth-child(12){
+  width: 0em;
+  height: 0em;
+  display: none;
+}
+
+
 /*-----------------------Squads------------------------*/
 .squads{
   background-color: #F1F1F1;
@@ -579,7 +596,7 @@ use this for mobile!!!!!!!*/
 .senior-squad{
   background-color: #FFFFFF;
   width: 23em;
-  height: 12.5em;
+  height: 12em;
   margin-bottom: 0.5em;
   border-bottom: 1px solid #CCCCCC;
 }
@@ -852,23 +869,23 @@ font-weight: 100;
 transition: height 1s ease;
 }
 #main-nav li.show:nth-child(4) {
-    cursor: pointer;
-    padding-top: 15px;
-padding-left: 5px;
-width: 100%;
-height: 100%;
-left: 0;
-top: 60px;
-display: block;
-clear: left;
-margin-top: 1em;
-margin-bottom: 2em;
-border-bottom: #d2d2d2 1px solid;
-margin: 0;
-background-color: white;
-color: black;
-font-weight: 100;
-transition: height 1s ease;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-left: 5px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 60px;
+  display: block;
+  clear: left;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  border-bottom: #d2d2d2 1px solid;
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-weight: 100;
+  transition: height 1s ease;
 }
 
 #main-nav li.show:nth-child(4).search-bar {
@@ -978,7 +995,6 @@ li.flex-item{
    FLEXING CONTENTS
    ========================================================================== */
 .flex-content{
-  
   display: -webkit-flex;
    display: flex;
    display: -ms -webkit-flex;
@@ -1456,7 +1472,7 @@ li .where{
 /*/---------------------------------squads------------------------------------/*/
 .squads{
   margin-top: -1em;
-  padding-top: 0.5em;
+  padding-top: 5em;
 max-width: 63.87rem;
 _width: 1022px;
 padding-left: 1.5em;
@@ -1467,9 +1483,32 @@ margin-left: auto;
 margin-right: auto;
 background-color: white;
 }
+/*/---------------------------------squads content when icon click on ------------------------------------/*/
+#squad-slide-show ul li{
+  float: left;
+  margin-top: 3em;
+  padding-bottom: 2em;
+}
+#timetable{
+  box-sizing: border-box;
+  margin-top: -2em;
+}
+#text{
+  padding-left: 2em;
+  margin-top: -2.5em;
+  
+}
+p.squad-description{
+  width: 22em;
+  text-align: left;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+/*/---------------------------------squad icons ------------------------------------/*/vvvvvvvvvvvvvvvvvv
 .senior-squad{
-  height: 12em;
+  height: 11.8em;
   margin-right: 0.2em;
+
 }
 .mini-squad{
   margin-left: 0.2em;
@@ -1478,7 +1517,7 @@ background-color: white;
   margin-top: 0.2em;
 }
 .senior-squad p{
-  margin-top: -1em;
+
 }
 
 .junior-squad h3{
